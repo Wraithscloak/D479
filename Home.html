@@ -17,7 +17,7 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+li a, .dropbtn1 {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -25,13 +25,13 @@ li a, .dropbtn {
   color: black;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown1:hover .dropbtn1 {
   background-color: #85ffaa;
 }
-li.dropdown{
+li.dropdown1{
   display: inline-block;
 }
-.dropdown-content {
+.dropdown-content1 {
   display: none;
   position: absolute;
   background-color: #B3AC85;
@@ -39,16 +39,16 @@ li.dropdown{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
+.dropdown-content1 a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
   color: black;
 }
-.dropdown-content a:hover {background-color: #85ffaa;}
+.dropdown-content1 a:hover {background-color: #85ffaa;}
 
-.dropdown:hover .dropdown-content {
+.dropdown1:hover .dropdown-content1 {
   display: block;
 }
 #logo{
@@ -71,6 +71,7 @@ table{
 img{
   height: 300px;
   width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
 }
 #links{
   text-align: center;
@@ -79,6 +80,27 @@ h2{text-align: center;}
 li p { font-size: 90%;
 padding-left: 10px;
 padding-right: 50px;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  background: lightgray;
+  width: 100%;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 9px;
+  z-index: 1;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: inline-block;
+  max-width: fit-content;
 }
     </style>
 </head>
@@ -89,21 +111,23 @@ padding-right: 50px;
   <ul>
       <li><p><strong>Come visit Taniti</strong></p></li>
       <li><a href="Home.html" id="current">Home</a></li>
-      <li><a href="lodging.html">Hotels</a></li>
-      <li class="dropdown"><a href="transportation.html" class="dropbtn">Transportation</a>
-      <div class="dropdown-content">
+      <li><a href="lodging.html">Lodging</a></li>
+      <li class="dropdown1"><a href="transportation.html" class="dropbtn1">Transportation</a>
+      <div class="dropdown-content1">
       <a href="flights.html">Flights</a>
       <a href="ground.html">Car Rentals</a>
       </div>
       </li>      
       <li><a href="rest.html">Places to Eat</a></li>
-      <li class="dropdown"><a href="ThingstoDo.html" class="dropbtn">Things To Do</a>
-      <div class="dropdown-content">
+      <li class="dropdown1"><a href="ThingstoDo.html" class="dropbtn1">Things To Do</a>
+      <div class="dropdown-content1">
       <a href="grocery.html">Shopping</a>
       <a href="entertain.html">Entertainment</a>
       <a href="sightseeing.html">Sightseeing</a>
       </div>
       </li>
+      <li><a href="Booking.html">Booking</a></li>
+      <li><a href="Review.html">Review</a></li>
   </ul>
 </nav>
 </header>
@@ -114,25 +138,75 @@ padding-right: 50px;
 </p>
 <table id="links">
   <tr>
-  <th><img src="D479\img\Hotel.avif" alt="palm trees line the street infornt of a hotel"></th>
-  <th><img src="D479\img\flights.avif" alt="pa plane flying over water"></th>
-  <th><img src="D479\img\car rental.avif" alt="Young man standing near the car getting keys rental service"></th>
-  <th><img src="D479\img\restraunt.avif" alt="a long wooden table with white plates on it"></th>
-  <th><img src="D479\img\Thingstodo.avif" alt="an ariel view of an amusement park at night"></th>
+  <th><a href="lodging.html"><img src="img\Hotel.avif" alt="palm trees line the street infornt of a hotel"></a></th>
+  <th><a href="flights.html"><img src="img\flights.avif" alt="pa plane flying over water"></a></th>
+  <th><a href="ground.html"><img src="img\car rental.avif" alt="Young man standing near the car getting keys rental service"></a></th>
+  <th><a href="rest.html"><img src="img\restraunt.avif" alt="a long wooden table with white plates on it"></a></th>
+  <th><a href="ThingstoDo.html"><img src="img\Thingstodo.avif" alt="an ariel view of an amusement park at night"></a></th>
   </tr>
   <tr>
-    <td><a href="D479\lodging.html">Hotels</a></td>
-    <td><a href="D479\flights.html">Flights</a></td>
-    <td><a href="D479\ground.html">Car Rentals</a></td>
-    <td><a href="D479\rest.html">Places to Eat</a></td>
-    <td><a href="D479\ThingstoDo.html">Things To Do</a></td>
+    <td>Lodging</td>
+    <td>Flights</td>
+    <td>Car Rentals</td>
+    <td>Places to Eat</td>
+    <td>Things To Do</td>
   </tr>
 </table>
 <h2>Frequently asked Questions</h2>
-<p>FAQ</p><br>
-<p>FAQ</p><br>
-<p>FAQ</p><br>
-<p>FAQ</p><br>
-<p>FAQ</p><br>
-<p>FAQ</p><br>
+<div class="dropdown2">
+<p class="dropbtn2">What is the voltage of the power outlets?</p>
+<div class="dropdown-content2">
+  <p>Power outlets are 120 volts (the same as in the United States).</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">When is Alchol allowed to be served?</p>
+<div class="dropdown-content2">
+  <p>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">What is the legal drinking age?</p>
+<div class="dropdown-content2">
+  <p>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">What is the language like?</p>
+<div class="dropdown-content2">
+  <p>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">Are their hospitals or medical facilities?</p>
+<div class="dropdown-content2">
+  <p>There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">How safe is Taniti?</p>
+<div class="dropdown-content2">
+  <p>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">Are their any holidays where buisness's would be closed?</p>
+<div class="dropdown-content2">
+  <p>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
+</div>
+</div>
+<br><br><br><br>
+<div class="dropdown2">
+  <p class="dropbtn2">What currency does Taniti use?</p>
+<div class="dropdown-content2">
+  <p>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+</div>
+</div>
+<br><br><br><br>
 </body>
