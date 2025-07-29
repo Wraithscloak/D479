@@ -81,10 +81,14 @@ li p { font-size: 90%;
 padding-left: 10px;
 padding-right: 50px;
 }
-
+#button{
+  float: inline-end;
+  padding-top: 12px;
+  padding-right: 15px;
+}
     </style>
 </head>
-<body>
+<body id="body">
 
 <header>
 <nav>  
@@ -107,7 +111,7 @@ padding-right: 50px;
       </div>
       </li>
       <li><a href="Booking.html">Booking</a></li>
-
+      <li id="button"><button type="button" onclick="document.getElementById('body').style.fontSize = '35px'">aA</button></li>
   </ul>
 </nav>
 </header>
