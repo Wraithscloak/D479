@@ -136,23 +136,21 @@ padding-right: 50px;
   </ul>
 </nav>
 </header>
-<form>
+<form action="/action_page.php" method="post">
     <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <input type="text" id="fname" name="fname" required><br>
     <label for="lname">Last Name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <input type="text" id="lname" name="lname" required><br>
     <label for="number">Phone Number:</label><br>
-    <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
     <label for="Email">Email:</label><br>
-    <input type="email" id="Email" name="Email"><br>
+    <input type="email" id="Email" name="Email" required><br>
     <label for="age">Age:</label><br>
-    <input type="text" id="age" name="age"><br>
-    <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <input type="text" id="age" name="age" required><br>
     <label for="income">Yearly Income:</label><br>
-    <input type="text" id="income" name="income"><br>
+    <input type="text" id="income" name="income" required><br>
     <label for="country">Country of Origin:</label><br>
-    <input type="text" id="country" name="country"><br>
+    <input type="text" id="country" name="country" required><br>
     <label for="numpeople">Amount in Party:</label><br>
     <input type="text" id="numpeople" name="numpeople"><br>
     <label for="time">Length of Stay(days):</label><br>
@@ -160,54 +158,54 @@ padding-right: 50px;
     <fieldset>
     <legend>Transportation to island</legend>
     <input type="radio" id="airplane" name="transport" value="Airplane">
-    <label for="airplane">Airplane</label>
+    <label for="airplane">Airplane</label><br>
     <input type="radio" id="cruise" name="transport" value="Cruise ship">
-    <label for="cruise">Cruise ship</label>
+    <label for="cruise">Cruise ship</label><br>
     </fieldset>
     <fieldset>
     <legend>Transportation around island</legend>
     <input type="radio" id="bus" name="Gtransport" value="Bus">
-    <label for="bus">Bus</label>
+    <label for="bus">Bus</label><br>
     <input type="radio" id="taxi" name="Gtransport" value="Taxi">
-    <label for="cruise">Taxi</label>
+    <label for="cruise">Taxi</label><br>
     <input type="radio" id="rCar" name="Gtransport" value="Rental Car">
-    <label for="rCar">Rental Car</label>
+    <label for="rCar">Rental Car</label><br>
     <input type="radio" id="CarS" name="Gtransport" value="Car Share">
-    <label for="CarS">Car Share</label>
+    <label for="CarS">Car Share</label><br>
     <input type="radio" id="HShuttle" name="Gtransport" value="Hotel Shuttle">
-    <label for="HShuttle">Hotel Shuttle</label>
+    <label for="HShuttle">Hotel Shuttle</label><br>
     <input type="radio" id="none" name="Gtransport" value="None">
-    <label for="none">None</label>
+    <label for="none">None</label><br>
     </fieldset>
         <fieldset>
-    <legend>Accomadations</legend>
+    <legend>Accomodations</legend>
     <input type="radio" id="hotel" name="accom" value="Hotel">
-    <label for="hotel">Hotel</label>
+    <label for="hotel">Hotel</label><br>
     <input type="radio" id="BHouse" name="accom" value="Beach House">
-    <label for="BHouse">Beach House</label>
+    <label for="BHouse">Beach House</label><br>
     <input type="radio" id="PCondo" name="accom" value="Private Condo">
-    <label for="PCondo">Private Condo</label>
+    <label for="PCondo">Private Condo</label><br>
     <input type="radio" id="PHome" name="accom" value="Private Home">
-    <label for="PHome">Private Home</label>
+    <label for="PHome">Private Home</label><br>
     <input type="radio" id="B&B" name="accom" value="Bed & Breakfast">
-    <label for="B&B">Bed & Breakfast</label>
+    <label for="B&B">Bed & Breakfast</label><br>
     </fieldset><br>
     <label for="reason">Purpose of Trip:</label><br>
     <input type="text" id="reason" name="reason"><br>
     <br><fieldset>
     <legend>Visit Status</legend>
     <input type="radio" id="FTime" name="status" value="First Time">
-    <label for="FTime">First Time</label>
+    <label for="FTime">First Time</label><br>
     <input type="radio" id="repeat" name="accom" value="Repeat">
-    <label for="repeat">Repeat</label>
+    <label for="repeat">Repeat</label><br>
     </fieldset>
             <fieldset>
     <legend>Interested in Local Attractions</legend>
     <input type="radio" id="y" name="response" value="Yes">
-    <label for="y">Yes</label>
+    <label for="y">Yes</label><br>
     <input type="radio" id="n" name="response" value="No">
-    <label for="n">No</label>
+    <label for="n">No</label><br>
     </fieldset>
-    <input type="submit" value="Submit">
+    <br><input type="submit" value="Submit">
 </form>
 </body>
